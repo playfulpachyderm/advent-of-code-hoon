@@ -33,7 +33,7 @@
 ?>  test-parse-elf
 ?>  test-total-elf-cals
 ::
-=/  input-text  (get-input-file:utils /(scot %p p.bec)/advent/(scot %da now)/inputs/1/hoon)
+=/  input-text  (get-input-file:utils bec now '1')
 =/  elves-text  (split:utils input-text "\0a\0a")
 =/  elves       (turn elves-text parse-elf)
 =/  cals        (turn elves total-elf-cals)

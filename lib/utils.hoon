@@ -20,9 +20,9 @@
 ::
 :: Get an input file
 ++  get-input-file
-  |=  [=path]
+  |=  [bec=beak now=@da num=@t]
   ^-  tape
-  (trip .^(@t %cx path))
+  (trip .^(@t %cx /(scot %p p.bec)/advent/(scot %da now)/inputs/[num]/hoon))
 ++  eq
   |=  [a=* b=*]
   =/  t1  -:!>(a)
